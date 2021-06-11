@@ -562,3 +562,55 @@ Total amount of GLM earned.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="get" host="https://api.stats.golem.network" path="/v1/network/computing" %}
+{% api-method-summary %}
+Network Providers Computing Currently
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Returns the amount of providers currently computing on the network
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Amount of providers computing right now.
+{% endapi-method-response-example-description %}
+
+```
+{"computing_now": "1"}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="get" host="https://api.stats.golem.network" path="/v1/network/provider/average/earnings" %}
+{% api-method-summary %}
+Network Providers Average Earnings
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Returns the average earnings per task.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Returns the average GLM amount earned per task.
+{% endapi-method-response-example-description %}
+
+```
+{"average_earnings": "0.548"}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
