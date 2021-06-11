@@ -1,6 +1,5 @@
 ---
-description: Network specific queries will return data in regards to the network as a whole
-  and not anything related to a specific provider.
+description: Network specific queries will return data in regards to the network as a whole and not anything related to a specific provider.
 ---
 
 # Network Specific
