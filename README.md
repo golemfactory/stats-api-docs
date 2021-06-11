@@ -4,7 +4,7 @@ description: >-
   https://stats.golem.network uses to display its data.
 ---
 
-# The Golem Network stats api documentation.
+# The Golem Network Stats Api Documentation.
 
 The API provided by the stats page is a REST API with multiple endpoints and is totally free of use. There's no limits to how much the API can be used, but that might be introduced in the future if it's abused.
 
