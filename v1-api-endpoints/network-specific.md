@@ -6,8 +6,6 @@ description: >-
 
 # Network Specific
 
-
-
 {% api-method method="get" host="https://api.stats.golem.network" path="/v1/network/online" %}
 {% api-method-summary %}
 Online Providers

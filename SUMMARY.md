@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Network specific](README.md)
+* [The Golem Network stats api documentation.](README.md)
 
 ## V1 API Endpoints
 
