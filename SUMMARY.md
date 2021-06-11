@@ -4,8 +4,6 @@
 
 ## V1 API Endpoints
 
----
-
-* [Provider Specific](provider-specific.md)
-* [Network Specific](network-specific.md)
+* [Network Specific](v1-api-endpoints/network-specific.md)
+* [Provider Specific](v1-api-endpoints/provider-specific.md)
 
