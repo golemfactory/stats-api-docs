@@ -1,10 +1,9 @@
 ---
-description: >-
-  Network specific queries will return data in regards to the network as a whole
+description: Network specific queries will return data in regards to the network as a whole
   and not anything related to a specific provider.
 ---
 
-# Network specific
+# Network Specific
 
 {% api-method method="get" host="https://api.stats.golem.network" path="/v1/network/online" %}
 {% api-method-summary %}
