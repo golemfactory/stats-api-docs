@@ -12,3 +12,5 @@ All responses from the API comes back in a JSON format.
 
 Happy usage! :-\) 
 
+Any questions or issues can be asked/raised in the [official Golem Discord](https://chat.golem.network) to Phillip\#9780
+
