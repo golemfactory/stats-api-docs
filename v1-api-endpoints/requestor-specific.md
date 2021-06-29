@@ -10,7 +10,7 @@ All Requestors
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Returns the total list of requestors and the amount of tasks requested
+Returns the total list of requestors and their amount of tasks requested
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -19,7 +19,7 @@ Returns the total list of requestors and the amount of tasks requested
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-The requestor ID and total tasks requested is returned.
+total tasks requested per requestor is returned.
 {% endapi-method-response-example-description %}
 
 ```
