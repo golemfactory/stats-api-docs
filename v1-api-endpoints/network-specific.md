@@ -670,3 +670,29 @@ Percentage of invoices paid during the last hour is returned.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="get" host="https://api.stats.golem.network" path="/v1/network/market/provider/invoice/accepted/1h" %}
+{% api-method-summary %}
+Providers Invoices Accepted Percentage Last Hour
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Returns the percentage of accepted invoices issued by the providers on the network.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Percentage of accepted invoices issued by providers are returned.
+{% endapi-method-response-example-description %}
+
+```
+{"percentage_invoice_accepted": 85.71314788555549}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
