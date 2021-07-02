@@ -606,5 +606,41 @@ Returns the average GLM amount earned per task.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="get" host="https://api.stats.golem.network" path="/v1/network/market/agreement/termination/reasons" %}
+{% api-method-summary %}
+Market Agreement Termination Reasons
+{% endapi-method-summary %}
 
+{% api-method-description %}
+This endpoint returns the count of reasons why the agreement between the provider and the requestor got terminated.  
+  
+Reasons provided by the endpoint includes:  
+  
+**`market_agreement_success` - Task computed successfully  
+  
+`market_agreement_cancelled` - The requestor cancelled the task request.  
+  
+`market_agreement_expired` - The whole task hit the timeout limit.  
+  
+`market_agreements_requestorUnreachable` - Provider is unable to send DebitNote to Requestor due to network errors  
+  
+`market_agreements_debitnoteDeadline` - This one is reported when DebitNotes are sent, but Requestor isn't accepting them.**
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Reasons and the respective count is returned.
+{% endapi-method-response-example-description %}
+
+```
+{"market_agreements_success": 479, "market_agreements_cancelled": 291, "market_agreements_expired": 0, "market_agreements_requestorUnreachable": 12, "market_agreements_debitnoteDeadline": 4}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
