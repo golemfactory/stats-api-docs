@@ -644,3 +644,29 @@ Reasons and the respective count is returned.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="get" host="https://api.stats.golem.network" path="/v1/network/market/invoice/paid/1h" %}
+{% api-method-summary %}
+Paid Invoices Last Hour
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Returns the percentage of invoices paid during the last hour.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Percentage of invoices paid during the last hour is returned.
+{% endapi-method-response-example-description %}
+
+```
+{"percentage_paid": 71.54757272907139}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
