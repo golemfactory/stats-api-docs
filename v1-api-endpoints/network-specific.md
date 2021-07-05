@@ -608,11 +608,11 @@ Returns the average GLM amount earned per task.
 
 {% api-method method="get" host="https://api.stats.golem.network" path="/v1/network/market/agreement/termination/reasons" %}
 {% api-method-summary %}
-Market Agreement Termination Reasons
+Market Agreement Termination Reasons \(6h\)
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint returns the count of reasons why the agreement between the provider and the requestor got terminated.  
+This endpoint returns the count of reasons why the agreement between the provider and the requestor got terminated during the last 6 hours.  
   
 Reasons provided by the endpoint includes:  
   
